@@ -1,0 +1,41 @@
+📦 GitHub 初始化與推送教學包（適用於部署 GitHub Pages）
+
+==================================================
+✅ 前提需求：
+- 已安裝 Git（Windows 可從 https://git-scm.com 安裝）
+- 已有 GitHub 帳號並建立好一個新倉庫（例如：parking-lot-query）
+==================================================
+
+🔧 步驟 1：切換至你的專案資料夾（包含 index.html）
+cd /path/to/your/unzipped/folder
+
+🔧 步驟 2：初始化 Git 專案
+git init
+
+🔧 步驟 3：建立 .gitignore（可選）
+echo ".DS_Store
+node_modules
+.env" > .gitignore
+
+🔧 步驟 4：加入檔案並提交
+git add .
+git commit -m "Initial commit"
+
+🔧 步驟 5：連接到 GitHub 倉庫
+# 將 YOUR_USERNAME 和 REPO_NAME 換成你自己的 GitHub 資訊
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+
+🔧 步驟 6：推送至 GitHub
+git push -u origin master
+
+🌐 步驟 7：在 GitHub 網頁啟用 GitHub Pages
+1. 打開 GitHub 倉庫頁面
+2. 點選「Settings」→「Pages」
+3. Source 請選擇：`master`（或 `main`） 分支 → `/ (root)`
+4. 點 Save 儲存
+
+🔗 完成後 GitHub Pages 網址會顯示在設定頁面，例如：
+https://YOUR_USERNAME.github.io/REPO_NAME/
+
+==================================================
+🎉 現在你可以透過這個網址公開瀏覽你的停車場查詢網頁！
